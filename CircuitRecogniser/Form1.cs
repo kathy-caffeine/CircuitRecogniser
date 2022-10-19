@@ -28,7 +28,11 @@ namespace CircuitRecogniser
                 imageWarrior.inputBitmap = MakeGrayscale(new Bitmap(sFileName));
                 buttonStart.Enabled = true;
                 pictureInput.Image = imageWarrior.inputBitmap;
-                pictureInput.Image = imageWarrior.inputBitmap;
+                //pictureInput.Image = imageWarrior.inputBitmap;
+
+
+                //temp
+                imageWarrior.outputBitmap = imageWarrior.inputBitmap;
             }
         }
 
@@ -56,6 +60,9 @@ namespace CircuitRecogniser
                 /**/
             }
             buttonDownload.Enabled = true;
+            CircRecPic form = new CircRecPic(imageWarrior.outputBitmap);
+            form.Show(this);
+            //form.Dispose();
         }
 
 
@@ -73,11 +80,11 @@ namespace CircuitRecogniser
                 System.Drawing.Imaging.ColorMatrix colorMatrix = new System.Drawing.Imaging.ColorMatrix(
                    new float[][]
                    {
-             new float[] {.3f, .3f, .3f, 0, 0},
-             new float[] {.59f, .59f, .59f, 0, 0},
-             new float[] {.11f, .11f, .11f, 0, 0},
-             new float[] {0, 0, 0, 1, 0},
-             new float[] {0, 0, 0, 0, 1}
+                    new float[] {.3f, .3f, .3f, 0, 0},
+                    new float[] {.59f, .59f, .59f, 0, 0},
+                    new float[] {.11f, .11f, .11f, 0, 0},
+                    new float[] {0, 0, 0, 1, 0},
+                    new float[] {0, 0, 0, 0, 1}
                    });
 
                 //create some image attributes
