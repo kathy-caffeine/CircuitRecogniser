@@ -32,7 +32,7 @@ namespace CircuitRecogniser
             this.pictureInput = new System.Windows.Forms.PictureBox();
             this.pictureBoxInfo = new System.Windows.Forms.PictureBox();
             this.groupBoxAlgoritmName = new System.Windows.Forms.GroupBox();
-            this.radioButSapo = new System.Windows.Forms.RadioButton();
+            this.radioButCanny = new System.Windows.Forms.RadioButton();
             this.radioButPrevit = new System.Windows.Forms.RadioButton();
             this.radioButSobel = new System.Windows.Forms.RadioButton();
             this.radioButRoberts = new System.Windows.Forms.RadioButton();
@@ -68,7 +68,7 @@ namespace CircuitRecogniser
             // 
             // groupBoxAlgoritmName
             // 
-            this.groupBoxAlgoritmName.Controls.Add(this.radioButSapo);
+            this.groupBoxAlgoritmName.Controls.Add(this.radioButCanny);
             this.groupBoxAlgoritmName.Controls.Add(this.radioButPrevit);
             this.groupBoxAlgoritmName.Controls.Add(this.radioButSobel);
             this.groupBoxAlgoritmName.Controls.Add(this.radioButRoberts);
@@ -81,17 +81,17 @@ namespace CircuitRecogniser
             this.groupBoxAlgoritmName.TabStop = false;
             this.groupBoxAlgoritmName.Text = "Названия Алгоритмов";
             // 
-            // radioButSapo
+            // radioButCanny
             // 
-            this.radioButSapo.AutoSize = true;
-            this.radioButSapo.Location = new System.Drawing.Point(5, 96);
-            this.radioButSapo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.radioButSapo.Name = "radioButSapo";
-            this.radioButSapo.Size = new System.Drawing.Size(121, 20);
-            this.radioButSapo.TabIndex = 3;
-            this.radioButSapo.TabStop = true;
-            this.radioButSapo.Text = "Фильтр Саппу";
-            this.radioButSapo.UseVisualStyleBackColor = true;
+            this.radioButCanny.AutoSize = true;
+            this.radioButCanny.Location = new System.Drawing.Point(5, 96);
+            this.radioButCanny.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.radioButCanny.Name = "radioButCanny";
+            this.radioButCanny.Size = new System.Drawing.Size(125, 21);
+            this.radioButCanny.TabIndex = 3;
+            this.radioButCanny.TabStop = true;
+            this.radioButCanny.Text = "Фильтр Кенни";
+            this.radioButCanny.UseVisualStyleBackColor = true;
             // 
             // radioButPrevit
             // 
@@ -99,7 +99,7 @@ namespace CircuitRecogniser
             this.radioButPrevit.Location = new System.Drawing.Point(5, 70);
             this.radioButPrevit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButPrevit.Name = "radioButPrevit";
-            this.radioButPrevit.Size = new System.Drawing.Size(144, 20);
+            this.radioButPrevit.Size = new System.Drawing.Size(147, 21);
             this.radioButPrevit.TabIndex = 2;
             this.radioButPrevit.TabStop = true;
             this.radioButPrevit.Text = "Фильтр Превитта";
@@ -111,7 +111,7 @@ namespace CircuitRecogniser
             this.radioButSobel.Location = new System.Drawing.Point(5, 44);
             this.radioButSobel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButSobel.Name = "radioButSobel";
-            this.radioButSobel.Size = new System.Drawing.Size(128, 20);
+            this.radioButSobel.Size = new System.Drawing.Size(133, 21);
             this.radioButSobel.TabIndex = 1;
             this.radioButSobel.TabStop = true;
             this.radioButSobel.Text = "Фильтр Собеля";
@@ -123,7 +123,7 @@ namespace CircuitRecogniser
             this.radioButRoberts.Location = new System.Drawing.Point(5, 18);
             this.radioButRoberts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButRoberts.Name = "radioButRoberts";
-            this.radioButRoberts.Size = new System.Drawing.Size(143, 20);
+            this.radioButRoberts.Size = new System.Drawing.Size(147, 21);
             this.radioButRoberts.TabIndex = 0;
             this.radioButRoberts.TabStop = true;
             this.radioButRoberts.Text = "Фильтр Робертса";
@@ -196,7 +196,7 @@ namespace CircuitRecogniser
         private System.Windows.Forms.PictureBox pictureInput;
         private System.Windows.Forms.PictureBox pictureBoxInfo;
         private System.Windows.Forms.GroupBox groupBoxAlgoritmName;
-        private System.Windows.Forms.RadioButton radioButSapo;
+        private System.Windows.Forms.RadioButton radioButCanny;
         private System.Windows.Forms.RadioButton radioButPrevit;
         private System.Windows.Forms.RadioButton radioButSobel;
         private System.Windows.Forms.RadioButton radioButRoberts;
